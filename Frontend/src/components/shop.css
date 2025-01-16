@@ -1,0 +1,14 @@
+.PageContainer {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1/12;
+  width: 100%;
+}
+
+.CarNav {
+  display: grid;
+  grid-template-columns: 1/12;
+}
+.Icons {
+  grid-column: 4/10;
+}

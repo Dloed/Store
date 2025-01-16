@@ -1,10 +1,18 @@
+import React from "react";
+import "./App.css";
 
-import './App.css';
+import {Routes, Route} from "react-router-dom"
+import Routing from "./routes";
 
 function App() {
   return (
-    <div></div>
-    
+    <>
+      <Routes>
+        {Routing.map((route) => (
+          <Route path={route.path} element={<route.element />} />
+        ))}
+      </Routes>
+    </>
   );
 }
 
